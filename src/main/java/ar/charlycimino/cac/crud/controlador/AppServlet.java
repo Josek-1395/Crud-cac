@@ -4,6 +4,7 @@ package ar.charlycimino.cac.crud.controlador;
 import ar.charlycimino.cac.crud.modelo.Alumno;
 import ar.charlycimino.cac.crud.modelo.Modelo;
 import ar.charlycimino.cac.crud.modelo.ModeloHC;
+import ar.charlycimino.cac.crud.modelo.ModeloMySQL;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -27,7 +28,7 @@ public class AppServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        this.model = new ModeloHC();
+        this.model = new ModeloMySQL();
     }
 
     @Override

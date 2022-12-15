@@ -13,7 +13,7 @@ import org.apache.commons.dbcp2.BasicDataSource;
  */
 public class Conexion {
 
-    private static final String URL_DB = "jdbc:mysql://root:root@localhost:3306/cac_crud_bd?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
+    private static final String URL_DB = "jdbc:mysql://root:root@localhost:3306/cac_crud_bd_22554?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
     private static Connection con;
     private static BasicDataSource dataSource;
 
@@ -23,6 +23,7 @@ public class Conexion {
     public static DataSource getDataSource() {
         if (dataSource == null) {
             try {
+                Class.forName("com.mysql.jdbc.Driver");
                 dataSource = new BasicDataSource();
                 dataSource.setUrl(URL_DB);
                 dataSource.setInitialSize(50);

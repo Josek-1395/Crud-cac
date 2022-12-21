@@ -44,7 +44,8 @@
                     <div class="col-12">
                         <div class="float-end">
                             <a href="${pageContext.request.contextPath}/app" class="btn btn-secondary">Volver atrás</a>
-                            <button type="submit" class="btn btn-warning">Confirmar cambios</button>
+                            <a class="btn btn-warning" href="${pageContext.request.contextPath}/app?accion=edit&id=${alumnoEnDetalle.id}" method="get">Editar alumno</a>
+                            <a class="btn btn-danger" href="${pageContext.request.contextPath}/app?accion=remove&id=${alumnoEnDetalle.id}" method="get">Borrar alumno</a>
                         </div>
                     </div>
                 </div>

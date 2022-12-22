@@ -6,7 +6,7 @@
 
 <section class="container py-3">
     <div class="row">
-        <h1 class="h3">Viste en detalle</h1>
+        <h1 class="h3">Vista en detalle de ${alumnoEnDetalle.nombreCompleto}</h1>
         
     </div>
 
